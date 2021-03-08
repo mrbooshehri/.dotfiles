@@ -1,0 +1,172 @@
+Return-Path: <beril@marmara.edu.tr>
+Delivered-To: mohammadrezabooshehri@marun.edu.tr
+Received: from posta.marmara.edu.tr (posta.marmara.edu.tr [193.140.143.15])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256)
+	(No client certificate requested)
+	by posta.marun.edu.tr (Postfix) with ESMTPS id 9855F70171E
+	for <Mohammadrezabooshehri@marun.edu.tr>; Sun, 28 Feb 2021 18:57:55 +0300 (+03)
+Received: from [172.20.10.3] (unknown [188.58.72.160])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	(Authenticated sender: beril)
+	by posta.marmara.edu.tr (Postfix) with ESMTPSA id 23407701403;
+	Sun, 28 Feb 2021 18:57:53 +0300 (+03)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=marmara.edu.tr;
+	s=posta; t=1614527874;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 in-reply-to:in-reply-to:references:references;
+	bh=HcoQu2a30llKZSojAm9+SzUO9OYWn2m+eTlRWS/fGkE=;
+	b=Ozv8W0JTUO9/+VeV8Sfs17ejC1mT/MnT2KkeOR5r9AaZK9Foam3GuUoxBvljTBOfdnbTHQ
+	UK595PgI/oVFakxG6IFI4gDfhrcYBCNZWhD4EkPI+VkDaxtAkvrEL8bQxsJSmn6S2BjvTb
+	6RHNws81w7eTKkYh4CP2Hf/hVZbKCjDumskX96wZnCjibS/zZ3ZPAH4ejoga5aoDvJ3Yva
+	RoUZ573A+5Q9h3eiOccobOOUVSzh3wZVn9PM/JaDw9PzvlvNKU7lKbKFxfKa8WyoTucg5d
+	xlod88e46gMqBa5ffhp7KFarWRiuBzfVLZLVX+4jAdF+wSQv/r3mRAC2f8I4lw==
+From: =?utf-8?Q?Beril_Durmu=C5=9F?= <beril@marmara.edu.tr>
+Mime-Version: 1.0 (Mac OS X Mail 14.0 \(3654.60.0.2.21\))
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_77E1CB74-BF35-464E-9E61-DE8D4F7E6C84"
+X-Priority: 3
+Subject: Re: About my final project
+Date: Sun, 28 Feb 2021 18:57:53 +0300
+References: <e6c688ef-31b4-4147-92cd-f52e2c3bee8b@email.android.com>
+To: mohammadreza Booshehri <Mohammadrezabooshehri@marun.edu.tr>,
+ hakany68@marmara.edu.tr
+In-Reply-To: <e6c688ef-31b4-4147-92cd-f52e2c3bee8b@email.android.com>
+Message-Id: <52785829-F210-4616-997B-D56CE1089505@marmara.edu.tr>
+X-Mailer: Apple Mail (2.3654.60.0.2.21)
+Authentication-Results: posta.marun.edu.tr;
+	none
+X-Spamd-Bar: /
+
+
+--Apple-Mail=_77E1CB74-BF35-464E-9E61-DE8D4F7E6C84
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+I told you CRM or dataminig is okey. Please go on and send me your =
+outline.
+
+Beril
+
+> On 28 Feb 2021, at 15:07, mohammadreza Booshehri =
+<Mohammadrezabooshehri@marun.edu.tr> wrote:
+>=20
+> Hello professor the university told me to pick the final project =
+course in fall semester then I can finish it at the end of spring =
+semester 2021. I just wanted to be sure about the topic and if you agree =
+on one of them. I only have final project in spring semester and I =
+should work on it.
+>=20
+> Yours sincerely,
+> Mohammad Reza.
+>=20
+> On Feb 27, 2021 22:46, Beril Durmu=C5=9F <beril@marmara.edu.tr> wrote:
+>=20
+>=20
+>=20
+> Hi Mohammad,
+> You wrote "I contacted you several times during fall semester and I =
+didn't receive any respond=E2=80=9D are you sure!!!
+> Please check your e-mails which you can see here and also you wrote me =
+back.
+> As far as I wrote to you about your topics are okey and choose one of =
+them and start your project. I mailed you on 21st of December.=20
+> You have to send me your project before makeup exams. If you finished =
+it send me tomorrow so I can check Turnitin result if it is okey than I =
+can submit your score.
+>=20
+> Prof. Dr. Beril Durmu=C5=9F
+>=20
+>=20
+>=20
+>=20
+> On 27 Feb 2021, at 18:01, mohammadrezabooshehri =
+<mohammadrezabooshehri@marun.edu.tr =
+<mailto:mohammadrezabooshehri@marun.edu.tr>> wrote:
+>=20
+> Hello professor, how are you? I hope you are doing well. I contacted =
+you several times during fall semester and I didn't receive any respond, =
+so I went to university and talk to Mr HAKAN YILDIRIM, my previous =
+advisor, he told me to pick some topics based on my interest then he =
+managed my situation. Right now I understand that my advisor has been =
+changed. So I talked to him about my situation and he told me to send an =
+email to you. I chose two topics based on my software engineering =
+background:
+> 1. Customer Relationship Management from Online Retail II Data Set =
+from ML Repository
+> 2. Bank Marketing Campaign from bank marketing dataset
+>=20
+> Yours truly,
+> Mohammad Reza.
+>=20
+>=20
+
+
+--Apple-Mail=_77E1CB74-BF35-464E-9E61-DE8D4F7E6C84
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D"">I =
+told you CRM or dataminig is okey. Please go on and send me your =
+outline.<div class=3D""><br class=3D""></div><div class=3D"">Beril<br =
+class=3D""><div><br class=3D""><blockquote type=3D"cite" class=3D""><div =
+class=3D"">On 28 Feb 2021, at 15:07, mohammadreza Booshehri &lt;<a =
+href=3D"mailto:Mohammadrezabooshehri@marun.edu.tr" =
+class=3D"">Mohammadrezabooshehri@marun.edu.tr</a>&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D""><div dir=3D"auto" =
+class=3D""><div dir=3D"auto" class=3D"">Hello professor the university =
+told me to pick the final project course in fall semester then I can =
+finish it at the end of spring semester 2021. I just wanted to be sure =
+about the topic and if you agree on one of them. I only have final =
+project in spring semester and I should work on it.</div><div dir=3D"auto"=
+ class=3D""><br class=3D""></div><div dir=3D"auto" class=3D"">Yours =
+sincerely,</div><div dir=3D"auto" class=3D"">Mohammad =
+Reza.</div></div><div class=3D"gmail_extra"><br class=3D""><div =
+class=3D"gmail_quote">On Feb 27, 2021 22:46, Beril Durmu=C5=9F &lt;<a =
+href=3D"mailto:beril@marmara.edu.tr" =
+class=3D"">beril@marmara.edu.tr</a>&gt; wrote:<br type=3D"attribution" =
+class=3D""><blockquote class=3D"quote" style=3D"margin:0 0 0 =
+.8ex;border-left:1px #ccc solid;padding-left:1ex"><div =
+style=3D"word-wrap:break-word" class=3D""><img width=3D"708" =
+height=3D"751" src=3D"cid:1B911BE7-74C8-461A-BE90-3C93E4F15C73" =
+class=3D""><div class=3D""><br class=3D""></div><div class=3D""><br =
+class=3D""></div><div class=3D"">Hi Mohammad,</div><div class=3D"">You =
+wrote "I contacted you several times during fall semester and I didn't =
+receive any respond=E2=80=9D are you sure!!!</div><div class=3D"">Please =
+check your e-mails which you can see here and also you wrote me =
+back.</div><div class=3D"">As far as I wrote to you about your topics =
+are okey and choose one of them and start your project. I mailed you on =
+21st of December.&nbsp;</div><div class=3D"">You have to send me your =
+project before makeup exams. If you finished it send me tomorrow so I =
+can check Turnitin result if it is okey than I can submit your =
+score.</div><div class=3D""><br class=3D""></div><div class=3D"">Prof. =
+Dr. Beril Durmu=C5=9F</div><div class=3D""><br class=3D""></div><div =
+class=3D""><br class=3D""></div><div class=3D""><br class=3D""></div><div =
+class=3D""><br class=3D""><div class=3D""><div class=3D""><blockquote =
+class=3D""><div class=3D"">On 27 Feb 2021, at 18:01, =
+mohammadrezabooshehri &lt;<a =
+href=3D"mailto:mohammadrezabooshehri@marun.edu.tr" =
+class=3D"">mohammadrezabooshehri@marun.edu.tr</a>&gt; wrote:</div><br =
+class=3D""><div class=3D""><div class=3D"">Hello professor, how are you? =
+I hope you are doing well. I contacted you several times during fall =
+semester and I didn't receive any respond, so I went to university and =
+talk to Mr HAKAN YILDIRIM, my previous advisor, he told me to pick some =
+topics based on my interest then he managed my situation. Right now I =
+understand that my advisor has been changed. So I talked to him about my =
+situation and he told me to send an email to you. I chose two topics =
+based on my software engineering background:<br class=3D"">1. Customer =
+Relationship Management from Online Retail II Data Set from ML =
+Repository<br class=3D"">2. Bank Marketing Campaign from bank marketing =
+dataset<br class=3D""><br class=3D"">Yours truly,<br class=3D"">Mohammad =
+Reza.<br class=3D""></div></div></blockquote></div><br =
+class=3D""></div></div></div></blockquote></div><br =
+class=3D""></div></div></blockquote></div><br =
+class=3D""></div></body></html>=
+
+--Apple-Mail=_77E1CB74-BF35-464E-9E61-DE8D4F7E6C84--

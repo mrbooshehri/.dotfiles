@@ -1,0 +1,252 @@
+#-s mod
+set $mod Mod4
+
+# font
+font pango:Open Sans 9
+
+# hide borders
+hide_edge_borders both
+
+# drag windows
+floating_modifier $mod
+
+# floating window 
+for_window [class="Variety"] floating enable
+for_window [class="Blueman-manager"] floating enable
+for_window [class="Gnome-calculator"] floating enable
+for_window [class="Gnome-calendar"] floating enable
+for_window [class="xdman-Main"] floating enable
+for_window [class="Software-properties-gtk"] floating enable
+for_window [class="Skype"] floating enable
+for_window [class="Gpick"] floating enable
+for_window [class="Gnome-pomodoro"] floating enable
+for_window [class="VirtualBox Manager"] floating enable
+for_window [class="SpeedCrunch"] floating enable
+for_window [class="Pavucontrol"] floating enable
+## test
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
+
+
+# gpas
+for_window [class="^.*"] border pixel 0
+
+gaps inner 6
+gaps outer 0
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+#bindsym $mod+Return exec i3-sensible-terminal
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+#workspace variables
+set $workspace1 "1" 
+#: 
+set $workspace2 "2" 
+#:爵 
+set $workspace3 "3" 
+#: 
+set $workspace4 "4" 
+#: 
+set $workspace5 "5" 
+#: 
+set $workspace6 "6" 
+#: 
+set $workspace7 "7" 
+#: 
+set $workspace8 "8" 
+#:瑩 
+set $workspace9 "9" 
+#: 
+set $workspace10 "10" 
+#: 
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# assigning to workspace
+assign [class="Brave-browser"] 2
+assign [class="qutebrowser"] 2
+assign [class="Code"] 3
+assign [class="obs"] 4
+assign [class="korganizer"] 5
+assign [class="Gpodder"] 6
+assign [class="Tor Browser"] 7
+assign [class="WebTorrent"] 7
+assign [class="Transmission-gtk"] 7
+assign [class="Rambox"] 9
+assign [class="TelegramDesktop"] 9
+assign [class="Rhythmbox"] 10
+for_window [class="Spotify"] move to workspace 10
+
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace
+bindsym $mod+Shift+r restart
+
+# exit i3
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to logout?' -b 'Logout' 'i3-msg exit'"
+
+# MY RESIZE BINDINGS
+	bindsym $mod+Left resize shrink width 10 px or 10 ppt
+        bindsym $mod+Up resize grow height 10 px or 10 ppt
+        bindsym $mod+Down resize shrink height 10 px or 10 ppt
+        bindsym $mod+Right resize grow width 10 px or 10 ppt
+
+
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+
+# lock screen
+bindsym $mod+x exec i3lock-fancy
+
+# media keys
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Pulse Audio controls
+bindsym F11 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym F10 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym F9 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Media player controls
+bindsym F7 exec playerctl play-pause
+bindsym F8 exec playerctl next
+bindsym F6 exec playerctl previous
+
+
+# startup
+exec --no-startup-id nm-applet # network manager
+exec --no-startup-id blueman-applet # bluetooth manager
+exec --no-startup-id variety # bluetooth manager
+
+# language layouts
+exec setxkbmap -layout us,ir
+exec_always setxkbmap -option 'grp:alt_shift_toggle'
+
+# compton
+exec compton -f -D 1
+
+# rofi
+bindsym $mod+d exec rofi -show drun -show-icons
+bindsym $mod+q exec rofi -show window
+bindsym $mod+r exec rofi -show run
+#bindsym $mod+n exec ~/.config/rofi/nmcli-rofi/nmcli-rofi
+bindsym $mod+m exec rofi -modi 'Emoji:~/.config/rofi/rofiemoji/rofiemoji.sh' -show 
+#bindsym $mod+p exec ~/.config/rofi/rofi-menus/scripts/powermenu.sh
+#bindsym $mod+c exec ~/.config/rofi/rofi-color-picker/rofi-color-picker/rofi-color-picker
+bindsym $mod+o exec ~/scripts/rofi/obs-rofi.sh
+bindsym $mod+p exec ~/scripts/rofi/moc-rofi.sh
+
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# KOrganizer
+exec --no-startup-id exec korganizer
+
+# screenshot
+#bindsym ctrl+shift+p exec kazam -f
+bindsym Print exec kazam -f
+bindsym ctrl+Print exec kazam -w
+bindsym ctrl+shift+Print exec flameshot gui
+
+# FIBO LAYOUT
+exec --no-startup-id ~/scripts/i3/alternating_layouts.py
+#
+#redshift
+exec redshift -c ~/.config/redshift/redshift.conf
+
+# safeeyes
+exec --no-startup-id safeeyes
+
+# Conky
+exec conky
+
+# Pulse Audio controls
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+

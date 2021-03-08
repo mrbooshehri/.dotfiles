@@ -1,0 +1,46 @@
+
+# IMAP and SMTP Config
+set folder = "imaps://mohammadrezabooshehri@posta.marun.edu.tr:993"
+set smtp_url = "smtps://mohammadrezabooshehri@posta.marun.edu.tr:465"
+
+# Personal Information
+set from = "mohammadrezabooshehri@marun.edu.tr"
+set realname = "Mohammad Reza Goli Booshehri"
+set use_from = yes
+set ssl_force_tls = yes
+
+# Folders Config
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+mailboxes =INBOX =Sent =Trash =Drafts =Junk =Other
+
+# Sidebar
+set sidebar_width = 20
+set sidebar_visible
+set sidebar_format = "%B%* %?N?%N?"
+
+# Settings
+set mail_check = 900
+set header_cache = ~/.config/neomutt
+set message_cachedir = ~/.config/neomutt
+unset imap_passive
+set imap_keepalive = 300
+set check_new = yes
+set timeout = 600
+set quit = ask-yes
+set beep_new
+set signature = ~/.config/neomutt/
+
+# Color Scheme
+source ~/.config/neomutt/gruvbox/colors-gruvbox-shuber.muttrc
+source ~/.config/neomutt/gruvbox/colors-gruvbox-shuber-extended.muttrc
+
+# Alias
+set alias_file = "~/.config/neomutt/aliases"
+set sort_alias = alias
+set reverse_alias = yes
+source $alias_file
+
+

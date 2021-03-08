@@ -1,0 +1,122 @@
+Return-Path: <taskindirsehan@gmail.com>
+Delivered-To: mohammadrezabooshehri@marun.edu.tr
+Received: from mx.marun.edu.tr (mx.marun.edu.tr [193.140.143.221])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by posta.marun.edu.tr (Postfix) with ESMTPS id DB9A2701797
+	for <mohammadrezabooshehri@marun.edu.tr>; Tue, 26 Jan 2021 17:05:40 +0300 (+03)
+Received: (korumail 36288 invoked from network); 26 Jan 2021 14:05:40 -0000
+Received: from unknown (HELO mail-ed1-f52.google.com) (209.85.208.52)  by 0
+	with ESMTPS (AES128-GCM-SHA256 encrypted); 26 Jan 2021 14:05:38 -0000
+Received-SPF: pass (0: SPF record at _netblocks.google.com designates
+ 209.85.208.52 as permitted sender)
+Received: by mail-ed1-f52.google.com with SMTP
+	id d22so19900115edy.1;        Tue, 26 Jan 2021 06:05:38 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20161025;        h=mime-version:from:date:message-id:subject:to;       
+ bh=3i0lKgB4nXIvRjnTuRbbgOTe0g0gpW/likCxmzcJOic=;       
+ b=UrNVP6kPPWm7CrbLL8CE4mYK5x9x94+K8FYoxEI/7OgS96BFDfwMC/KBnZIzSHp8EL        
+ BhzWpPH/ga/kKlgCnJkAGLH/GFbqczYerCRs9pBvUf4px/oof1c0xF6i7t8tL/p07rL6        
+ lLN2h3tF48NJMLmymQbkRU2helw8ZzBKxFjX38+u4KNaZgAmsSZUtzeIuZcoNMAvOX4V        
+ A9UzcBoEZ98QOQIL83TBR3ewiIe8IRWxzYX2NdbKXoF63hQX+DYm3jI4yNo/Hl7kZlNd        
+ NrIv0OsIq6YlCduqvodyB5h4H8tra1kbXwlJmT9yc/ECk1YUjDxSMaTqm4Qo5MN2Cw9i        
+ 1Yzg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=1e100.net; s=20161025;       
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;       
+ bh=3i0lKgB4nXIvRjnTuRbbgOTe0g0gpW/likCxmzcJOic=;       
+ b=AUKTHgY0x3dUSUCueVIy4EbqJi+UdBaSg87JMI+89vDVzrrFbKRxfrQeGWYZsXItc9        
+ R0mvhAfPnGSbFOAhuDD7mWCbGzqZEjvcMPGAdQLXnDWoVUEEupAPFBMijF8f2nbxTaNr        
+ M7LgWircp2lXbdzPhgWrKuQgBlRvd9imtmpJeP+5cTnaPSVPI16qfV4ckOsLcEvvW9gv        
+ sAk3bhEp2FoNZeORJVYFBSPFXTFgpAIHC7upC0gcAi2NKktUqoeqbchXVcDBofxTP10+        
+ IKkx/3L34SqPQ2DZZwyzr5F+syV9RhvN3TNgYpO1jM3VL4KWYbrIdNsVKfr1afvCul1U        
+ Kxjg==
+X-Gm-Message-State: AOAM531JN004f7ckljNRY3rf3deUi6DqwnYN3VIyVSfoPyqWfOuWlAmV
+	ieFfkvRsM8dHvzdXbEeU4K+4C0IRSCBblnrW5H4=
+X-Google-Smtp-Source: 
+ ABdhPJwiVpLkPgThYcQ2vhf9TFgFXF8svT3yqyi6omCYgoJUkmZzAaNtbJxCD8a86Syq0qwWHcOzw
+	wsrXHpkFJJ/Pnc=
+X-Received: by 2002:a05:6402:513:: with SMTP id
+ m19mr4707958edv.229.1611669877532; Tue, 26 Jan 2021 06:04:37 -0800 (PST)
+MIME-Version: 1.0
+From: Taskin Dirsehan <taskindirsehan@gmail.com>
+Date: Tue, 26 Jan 2021 17:04:21 +0300
+Message-ID: <CAJuiRaVMph5gGdXWog8kvHzqkGZx655TAiVdY8d1f2C5Zq-U4Q@mail.gmail.com>
+Subject: Participation in my question forms
+To: Jihad Baf <jihadalbaf@gmail.com>, Jakingbagbohun2019@std.sehir.edu.tr,
+	aliasadnia@marun.edu.tr, salmachaabene635@gmail.com, rihammoujahid@gmail.com,
+	imanehamdaoui14@gmail.com, mohammadrezabooshehri@marun.edu.tr,
+	fayyaz0300@hotmail.com, walidmz473@gmail.com, walid.bahayou@gmail.com,
+	zahidpasha2556@gmail.com
+X-Envelope-Sender: taskindirsehan@gmail.com
+X-KORUMAIL-QueueId: 36273-1611669938-127991
+X-SMTP-Filter: Korumail SMTP Filter Engine Korumail 6.7.13
+X-KORUMAIL-Result: Clean (Content eval: -11.000000 points)
+X-KORUMAIL-Reason: 
+Content-Type: multipart/alternative; boundary=0000000000008bad0305b9ce2218
+Authentication-Results: posta.marun.edu.tr;
+	none
+X-Spamd-Bar: /
+
+--0000000000008bad0305b9ce2218
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all,
+
+
+
+I hope everything is fine with you. I've prepared a form instead of sending
+e-mails to all of you and keeping all of you busy. If you'd like to receive
+my e-mails about my research questions, you can inform me about your
+contact information via this form: https://forms.gle/k5oH4bs7o8WdFVPX7
+
+
+Have a nice evening,
+--=20
+---
+
+Ta=C5=9Fk=C4=B1n Dirsehan, PhD
+*Assoc.Prof. of Marketing*
+Erasmus+ Faculty Coordinator
+Marmara University | Faculty of Business Administration
+
+--0000000000008bad0305b9ce2218
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:trebuche=
+t ms,sans-serif;font-size:small;color:#0b5394"><div class=3D"gmail_default"=
+><p class=3D"MsoNormal" style=3D"margin:0cm;line-height:normal;font-size:11=
+pt;font-family:Calibri,sans-serif"><span style=3D"font-size:12pt;font-famil=
+y:&quot;Times New Roman&quot;,serif">Dear all,</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm;line-height:normal;font-size:11p=
+t;font-family:Calibri,sans-serif"><span style=3D"font-size:12pt;font-family=
+:&quot;Times New Roman&quot;,serif">=C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm;line-height:normal;font-size:11p=
+t;font-family:Calibri,sans-serif"><span style=3D"font-size:12pt;font-family=
+:&quot;Times New Roman&quot;,serif">I hope everything is fine
+with=C2=A0you. I&#39;ve prepared a form instead of sending e-mails to all o=
+f you and
+keeping all of you busy. If you&#39;d like to receive my e-mails=C2=A0about=
+ my research questions, you can inform me about your contact information vi=
+a this form:=C2=A0</span><a href=3D"https://forms.gle/k5oH4bs7o8WdFVPX7" ta=
+rget=3D"_blank" style=3D"font-family:&quot;trebuchet ms&quot;,sans-serif;fo=
+nt-size:small">https://forms.gle/k5oH4bs7o8WdFVPX7</a></p><p class=3D"MsoNo=
+rmal" style=3D"margin:0cm;line-height:normal;font-size:11pt;font-family:Cal=
+ibri,sans-serif"><span style=3D"font-size:12pt;font-family:&quot;Times New =
+Roman&quot;,serif"><br></span></p><p class=3D"MsoNormal" style=3D"margin:0c=
+m;line-height:normal;font-size:11pt;font-family:Calibri,sans-serif"><span s=
+tyle=3D"font-size:12pt;font-family:&quot;Times New Roman&quot;,serif">
+Have a nice evening,</span></p></div></div>-- <br><div dir=3D"ltr" class=3D=
+"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div>=
+<div dir=3D"ltr"><font face=3D"trebuchet ms, sans-serif" color=3D"#0b5394">=
+---<br></font><pre><font face=3D"trebuchet ms, sans-serif" color=3D"#0b5394=
+">Ta=C5=9Fk=C4=B1n Dirsehan, PhD<br><em>Assoc.Prof. of Marketing</em>
+Erasmus+ Faculty Coordinator
+Marmara University=C2=A0|=C2=A0Faculty of Business Administration</font></p=
+re></div></div></div></div></div>
+
+--0000000000008bad0305b9ce2218--

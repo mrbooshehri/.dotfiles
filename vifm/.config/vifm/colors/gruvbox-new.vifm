@@ -1,0 +1,47 @@
+" gruvbox color scheme approximation for vifm
+
+" Purple-light = 132
+" Green-yellow = 142
+" Cyan = 144
+" Purple = 167
+" Orange-light = 172
+" Orange = 214
+" Red = 223
+" Grey-hard = 235
+" Grey-medium = 236
+" Grey-light = 237
+" Grey-lighter = 238
+
+ " STYLES
+ " bold
+ " underline
+ " reverse or inverse
+ " standout
+ " none
+
+highlight clear
+
+highlight Win		cterm=none	ctermfg=223	ctermbg=default
+
+highlight TopLine	cterm=none	ctermfg=214	ctermbg=235
+highlight TopLineSel	cterm=bold	ctermfg=214	ctermbg=237
+highlight StatusLine	cterm=bold	ctermfg=144	ctermbg=236
+highlight Border	cterm=none	ctermfg=144	ctermbg=none
+
+highlight Selected	cterm=none	ctermfg=223	ctermbg=237
+highlight CurrLine	cterm=bold,inverse	ctermfg=default	ctermbg=default
+
+highlight WildMenu	cterm=bold	ctermfg=235	ctermbg=144
+highlight CmdLine	cterm=none	ctermfg=223	ctermbg=default
+highlight ErrorMsg	cterm=bold	ctermfg=167	ctermbg=default
+
+highlight Directory	cterm=bold	ctermfg=109	ctermbg=default
+highlight Link		cterm=none	ctermfg=132	ctermbg=default
+highlight BrokenLink	cterm=bold	ctermfg=167	ctermbg=default
+highlight Socket	cterm=bold	ctermfg=223	ctermbg=default
+highlight Device	cterm=none,standout	ctermfg=214	ctermbg=default
+highlight Fifo		cterm=none	ctermfg=172	ctermbg=default
+highlight Executable	cterm=bold	ctermfg=142	ctermbg=default
+"highlight OtherWin  	cterm=none	ctermfg=223	ctermbg=236
+highlight OtherLine	cterm=bold	ctermfg=default	ctermbg=235
+highlight JobLine	cterm=bold	ctermfg=116	ctermbg=238

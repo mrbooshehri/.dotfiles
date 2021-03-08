@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Numix Blue
+Comment=Variant of Numix with blue highlights
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=NumixBlue
+MetacityTheme=NumixBlue
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

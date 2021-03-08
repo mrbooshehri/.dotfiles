@@ -1,0 +1,120 @@
+/* dark colormap */
+
+@define-color theme_base_color #0F0606;
+@define-color theme_text_color #FEFEFE;
+@define-color theme_bg_color #232323;
+@define-color theme_fg_color @theme_text_color;
+@define-color selected_bg_color #7C0D0D;
+@define-color selected_fg_color #ffffff;
+@define-color theme_selected_bg_color @selected_bg_color;
+
+@define-color menu_bg_color #535555;
+@define-color menu_fg_color @theme_text_color;
+
+@define-color menu_combobox_border @theme_selected_bg_color;
+@define-color menu_separator mix (@theme_bg_color, @menu_bg_color, 0.90);
+
+@define-color theme_tooltip_bg_color #000000;
+@define-color theme_tooltip_fg_color #eeeeee;
+
+
+@define-color button_border #2a2424;
+
+@define-color button_raised_linked_shadow alpha(#000000, 0.14);
+
+
+@define-color insensitive_bg_color alpha(#0d0b0b, 0.0);
+@define-color insensitive_fg_color alpha(#717171, 0.50);
+@define-color insensitive_border_color alpha(#717171, 0.50);
+
+@define-color inactive_frame_color shade (@theme_bg_color, 0.8);
+
+@define-color notebook_border @button_border;
+
+
+@define-color switch_slider_color #131111;
+@define-color switch_slider_border #cca5a5;
+
+@define-color highlighted_border @button_border;
+@define-color internal_element_color #858888;
+@define-color internal_element_prelight #333333;
+
+@define-color progressbar_background #030303;
+@define-color progressbar_border #3D3D3D;
+
+@define-color progressbar_background_a #5F0000;
+@define-color progressbar_background_b #B20000;
+@define-color progressbar_pattern #000000;
+
+@define-color entry_text_color #FEFEFE;
+@define-color entry_background_a #848484;
+@define-color entry_background_b #bababa;
+@define-color entry_background_c #e7e7e7;
+@define-color entry_background_d #f3f3f3;
+
+@define-color frame_color #707070;
+
+
+@define-color toolbar_gradient_base #484848;
+@define-color toolbar_gradient_step1 #383838;
+@define-color toolbar_gradient_step2 #2F2F2F;
+@define-color toolbar_gradient_final #000000;
+
+@define-color toolbar_active_button_color #9C0606;
+@define-color toolbar_border_top #050505;
+@define-color toolbar_border_bottom #595959;
+
+@define-color primary_toolbar_entry_bg #0F0606;
+@define-color primary_toolbar_entry_fg @theme_text_color;
+
+
+
+@define-color menu_controls_color #acaaaa;
+
+
+@define-color trough_bg_color_a #252525;
+@define-color trough_bg_color_b #3f4141;
+
+
+
+
+/* FIXME: needs dark colors from here */
+@define-color link_color #d94a4a;
+@define-color warning_color #00f5f5;
+@define-color error_color #00cccc;
+@define-color success_color #064e4e;
+
+@define-color info_fg_color rgb(156, 181, 181);
+@define-color info_bg_color rgb(189, 252, 252);
+@define-color warning_fg_color rgb(41, 173, 173);
+@define-color warning_bg_color rgb(61, 250, 250);
+@define-color question_fg_color rgb(214, 97, 97);
+@define-color question_bg_color rgb(212, 138, 138);
+@define-color error_fg_color rgb(38, 166, 166);
+@define-color error_bg_color rgb(54, 237, 237);
+
+@define-color os_chrome_bg_color black;
+@define-color os_chrome_fg_color #ccc;
+@define-color os_chrome_selected_bg_color #333;
+@define-color os_chrome_selected_fg_color white;
+
+@define-color chrome_bg_color #171e1e;
+@define-color chrome_fg_color #fff;
+
+@define-color scale_progress_fill #e22c2c;
+@define-color scale_progress_border #b21818;
+@define-color scale_progress_border_b #e53e3e;
+
+@define-color wm_title_highlight #111111;
+@define-color wm_shadow #000000;
+
+@define-color osd_text_shadow #000000;
+@define-color window_frame #7C7C7C;
+@define-color window_frame_inactive #3E3E3E;
+
+
+@import url("gtk-widgets.css");
+@import url("gnome-applications.css");
+@import url("gtk-widgets-overrides.css");
+
+
