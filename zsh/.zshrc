@@ -86,6 +86,20 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Functions
+
+fcd() {
+ cd "$(find -type d | fzf)" 
+}
+
+open() {
+  xdg-open "$(find -type f | fzf)"
+}
+
+hdd() {
+ cd "$(find /mnt/1TB -type d | fzf)" 
+}
+
 # Config aliases
 alias zshconf="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
@@ -109,7 +123,7 @@ alias ll="colorls -lA --sd --group-directories-first"
 alias tml="tmux ls"
 alias tmk="tmux kill-session -t" 
 alias tomp3="~/scripts/tomp3.sh"
-alias hdd="cd /mnt/1TB"
+#alias hdd="cd /mnt/1TB"
 # Nipe aliases
 #alias nipstr="~/scripts/nipe/nipstr.sh"
 #alias nipstp="~/scripts/nipe/nipstp.sh"

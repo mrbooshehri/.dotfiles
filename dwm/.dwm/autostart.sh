@@ -8,7 +8,7 @@ wmname LG3D
 
 # transparancy
 #compton -f -D 10 &
-picom -f -D 8 &
+picom -f -D 6 &
 
 # set layout
 setxkbmap -layout us,ir 
