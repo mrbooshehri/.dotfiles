@@ -11,6 +11,6 @@ git clone https://github.com/mrbooshehri/.dotfiles.git
 stow --adopt -vt ~ * 
 ```
 ## Note
-1. you cand use ```-nvt``` if you are not sure what's going on!
+1. you can use ```-nvt``` if you are not sure what's going on!
 2. remove existing config directories before creating symbolic link 
 
