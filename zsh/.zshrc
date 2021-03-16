@@ -123,16 +123,19 @@ alias ll="colorls -lA --sd --group-directories-first"
 alias tml="tmux ls"
 alias tmk="tmux kill-session -t" 
 alias tomp3="~/scripts/tomp3.sh"
-#alias hdd="cd /mnt/1TB"
+
+alias rndman="~/scripts/bash/rndman.sh"
+alias findman="~/scripts/bash/findman.sh"
+
 # Nipe aliases
 #alias nipstr="~/scripts/nipe/nipstr.sh"
 #alias nipstp="~/scripts/nipe/nipstp.sh"
 #alias nipstat="~/scripts/nipe/nipstat.sh"
+#
 # curl
 #alias wttr="curl wttr.in"
-# others
-#alias stdic="sdcv"
-# exports
+#
+# Env variables
 export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR="vim"
 
