@@ -4,7 +4,7 @@
 ```bash
 sudo touch /etc/X11/xorg.conf.d/40-libinput.conf
 ```
-2. Open the file add these lines to ```40-libinput.conf```
+2. Open ```40-libinput.conf``` and add these lines to it
 ```bash
 sudo vim /etc/X11/xorg.conf.d/40-libinput.conf
 
@@ -15,7 +15,7 @@ Section "InputClass"
 	Option "Tapping" "True"
 	Option "TappingDrag" "True"
 	Option "AccelProfile" "linear"
-	Option "DisableWhileTyping" "False"
+	Option "DisableWhileTyping" "True"
 	Driver "libinput"
 EndSection
 ```
