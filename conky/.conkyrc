@@ -16,7 +16,7 @@ conky.config = {
 	use_xft = true,
 	font = 'Hack Nerd Font:size=11',
 	gap_x = 14,
-	gap_y = 40,
+	gap_y = 0,
 	no_buffers = true,
 	minimum_width = 160, minimum_height = 5,
 	maximum_width = 400,
@@ -68,7 +68,7 @@ conky.config = {
 }
 
 conky.text = [[
-${voffset 8}
+${voffset 48}
 ${color3}${font :size=24}$alignc${time %B} ${time %e}${font}
 ${color4}$alignr${time %H:%M}
 ${color3}${voffset 8}${font Hack Nerd Font:style=Medium:size=16}CPU ${hr 2}${font}${voffset 8}${color}
@@ -97,5 +97,5 @@ ${color4}${color} ${fs_used /mnt/1TB}/${fs_size /mnt/1TB} ${alignr}${fs_used_
 ${color3}${voffset 8}${font Hack Nerd Font:style=Medium:size=16}Battery ${hr 2}${font}${voffset 8}${color}
 ${color4}${color} Level: $alignr${battery_percent}% ${battery_bar 8,100}
 #蓼
-${voffset 60}
+${voffset 70}
 ]]
