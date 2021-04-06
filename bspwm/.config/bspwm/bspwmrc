@@ -5,15 +5,64 @@ pgerp -x polybar > /dev/null || $HOME/.config/polybar/launch.sh
 
 bspc monitor -d           
 
-bspc config border_width         2
-bspc config window_gap		 4
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+# Truncate a couple of common commands that are used herein.
+_bc() {
+	bspc config "$@"
+}
+
+_bc border_width		2
+_bc window_gap			4
+_bc top_padding			4
+_bc top_monocle_padding 	0
+_bc single_monocle		false
+_bc click_to_focus		false
+_bc borderless_monocle   	true
+_bc gapless_monocle      	true
+_bc split_ratio          	0.52
+_bc paddingless_monocle		true
+
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a MEGAsync state=floating
+bspc rule -a Skype state=floating
+bspc rule -a Safeeyes state=floating
+bspc rule -a Variety state=floating
+bspc rule -a Gpick state=floating
+bspc rule -a VirtualBox Manager state=floating
+bspc rule -a Software-properties-gtk state=floating
+bspc rule -a Gnome-calendar state=floating
+bspc rule -a Gnome-calculator state=floating
+bspc rule -a Pavucontrol state=floating
+bspc rule -a Hamster state=floating
+bspc rule -a Orage state=floating
+bspc rule -a Blueman-manager state=floating
+
+bspc rule -a firefox desktop='^2'
+bspc rule -a Brave-browser desktop='^2'
+bspc rule -a LibreWolf desktop='^2'
+bspc rule -a qutebrowser desktop='^2'
+bspc rule -a Code desktop='^3'
+bspc rule -a jetbrains-studio desktop='^3'
+bspc rule -a obs desktop='^7'
+bspc rule -a Tor Browser desktop='^7'
+bspc rule -a Transmission-gtk desktop='^7'
+bspc rule -a Rambox desktop='^9'
+bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a Signal desktop='^9'
+bspc rule -a Spotify desktop='^10'
+
+# Auto starts
+pgerp -x picom > /dev/null || picom -f -D 4 &
+setxkbmap -layout us,ir &
+setxkbmap -option 'grp:alt_shift_toggle' &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#pgerp -x conky > /dev/null || conky &
+#pgrep -x redshift > /dev/null || redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
+nm-applet &
+blueman-applet &
+variety &
+safeeyes &
+syncthing &
+kdeconnect-indicator
+optimus-manager-qt &
