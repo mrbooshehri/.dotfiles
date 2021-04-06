@@ -5,15 +5,15 @@
 * {
     background-color:       @bg;
     text-color:             @fg;
-	font:				 	"Fantasque Sans Mono 10";
+	font:				 	"Open Sans 11";
 }
 
 window {
     width:      			320px;
     padding:    			25px;
-    border:					1px;
+    border:					2px;
     border-radius:          0px;
-    border-color:           @bg1;
+    border-color:           @bg3;
     location:               center;
     y-offset:               -2em;
 }

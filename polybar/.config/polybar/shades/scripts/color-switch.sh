@@ -3,14 +3,17 @@
 SDIR="$HOME/.config/polybar/shades/scripts"
 
 # Launch Rofi
-MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
+MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p 'Themes' \
 -theme $SDIR/rofi/styles.rasi \
-<<< "♥ amber|♥ blue|♥ blue-gray|♥ brown|♥ cyan|♥ deep-orange|\
-♥ deep-purple|♥ green|♥ gray|♥ indigo|♥ blue-light|♥ green-light|\
-♥ lime|♥ orange|♥ pink|♥ purple|♥ red|♥ teal|♥ yellow|♥ amber-dark|\
-♥ blue-dark|♥ blue-gray-dark|♥ brown-dark|♥ cyan-dark|♥ deep-orange-dark|\
-♥ deep-purple-dark|♥ green-dark|♥ gray-dark|♥ indigo-dark|♥ blue-light-dark|\
-♥ green-light-dark|♥ lime-dark|♥ orange-dark|♥ pink-dark|♥ purple-dark|♥ red-dark|♥ teal-dark|♥ yellow-dark|")"
+<<< " amber| blue| blue-gray| brown| cyan| deep-orange|\
+ deep-purple| green| gray| indigo| blue-light| green-light|\
+ lime| orange| pink| purple| red| teal| yellow| gruvbox-black|\
+ gruvbox-blue| gruvbox-orange| gruvbox-yellow| amber-dark|\
+ blue-dark| blue-gray-dark| brown-dark| cyan-dark| deep-orange-dark|\
+ deep-purple-dark| green-dark| gray-dark| indigo-dark| blue-light-dark|\
+ green-light-dark| lime-dark| orange-dark| pink-dark| purple-dark| red-dark|\
+ teal-dark| yellow-dark| gruvbox-black-dark| gruvbox-blue-dark|\
+ gruvbox-orange-dark| gruvbox-yellow-dark")"
             case "$MENU" in
 				## Light Colors
 				*amber) "$SDIR"/colors-light.sh --amber ;;
@@ -32,6 +35,10 @@ MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
 				*red) "$SDIR"/colors-light.sh --red ;;
 				*teal) "$SDIR"/colors-light.sh --teal ;;
 				*yellow) "$SDIR"/colors-light.sh --yellow ;;
+				*gruvbox-black) "$SDIR"/colors-light.sh --gruvbox-black ;;
+				*gruvbox-blue) "$SDIR"/colors-light.sh --gruvbox-blue ;;
+				*gruvbox-orange) "$SDIR"/colors-light.sh --gruvbox-orange ;;
+				*gruvbox-yellow) "$SDIR"/colors-light.sh --gruvbox-yellow ;;
 				## Dark Colors
 				*amber-dark) "$SDIR"/colors-dark.sh --amber ;;
 				*blue-dark) "$SDIR"/colors-dark.sh --blue ;;
@@ -51,5 +58,9 @@ MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
 				*purple-dark) "$SDIR"/colors-dark.sh --purple ;;
 				*red-dark) "$SDIR"/colors-dark.sh --red ;;
 				*teal-dark) "$SDIR"/colors-dark.sh --teal ;;
-				*yellow-dark) "$SDIR"/colors-dark.sh --yellow				
+				*yellow-dark) "$SDIR"/colors-dark.sh --yellow;;
+				*gruvbox-black-dark) "$SDIR"/colors-dark.sh --gruvbox-black ;;
+				*gruvbox-blue-dark) "$SDIR"/colors-dark.sh --gruvbox-blue ;;
+				*gruvbox-orange-dark) "$SDIR"/colors-dark.sh --gruvbox-orange ;;
+				*gruvbox-yellow-dark) "$SDIR"/colors-dark.sh --gruvbox-yellow
             esac

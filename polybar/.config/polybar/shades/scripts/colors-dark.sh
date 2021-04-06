@@ -113,6 +113,22 @@ elif  [[ $1 = "--yellow" ]]; then
 	SH1="#F57F17"	SH2="#F9A825"	SH3="#FBC02D"	SH4="#FDD835"
 	SH5="#FFEB3B"	SH6="#FFEE58"	SH7="#FFF176"	SH8="#FFF59D"
 	change_color
+elif  [[ $1 = "--gruvbox-black" ]]; then
+	SH1="#0d0d0d"	SH2="#282828"	SH3="#262626"	SH4="#404040"
+	SH5="#595959"	SH6="#737373"	SH7="#8c8c8c"	SH8="#a6a6a6"
+	change_color
+elif  [[ $1 = "--gruvbox-blue" ]]; then
+	SH1="#1a3233"	SH2="#1a3233"	SH3="#2b5355"	SH4="#3c7476"
+	SH5="#4d9598"	SH6="#67aeb2"	SH7="#89c0c3"	SH8="#458588"
+	change_color
+elif  [[ $1 = "--gruvbox-orange" ]]; then
+	SH1="#481f05"	SH2="#783408"	SH3="#a8490b"	SH4="#d65d0e"
+	SH5="#d75e0e"	SH6="#f17728"	SH7="#f49557"	SH8="#f7b487"
+	change_color
+elif  [[ $1 = "--gruvbox-yellow" ]]; then
+	SH1="#422f0a"	SH2="#6f4f11"	SH3="#9b6e18"	SH4="#c78e1f"
+	SH5="#d79921"	SH6="#e0a738"	SH7="#e7bb64"	SH8="#eece90"
+	change_color
 else
 	cat <<- _EOF_
 	No option specified, Available options:
@@ -120,6 +136,8 @@ else
 	--cyan	--deep-orange	--deep-purple	--green
 	--gray	--indigo	--light-blue	--light-green
 	--lime	--orange	--pink		--purple
-	--red	--teal		--yellow
+	--red	--teal		--yellow	--gruvbox-black
+	--gruvbox-blue		--grubbox-orange
+	--gruvbox-yellow
 	_EOF_
 fi
