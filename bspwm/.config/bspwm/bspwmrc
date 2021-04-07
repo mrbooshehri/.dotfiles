@@ -1,8 +1,22 @@
 #! /bin/sh
 
+# Auto starts
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh --shades
-
+pgerp -x picom > /dev/null || picom -f -D 4 &
+setxkbmap -layout us,ir &
+setxkbmap -option 'grp:alt_shift_toggle' &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+pgerp -x conky > /dev/null || conky &
+pgrep -x redshift > /dev/null || redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
+nm-applet &
+blueman-applet &
+variety &
+safeeyes &
+syncthing &
+kdeconnect-indicator
+optimus-manager-qt &
 bspc monitor -d           
 
 
@@ -51,17 +65,3 @@ bspc rule -a TelegramDesktop desktop='^9'
 bspc rule -a Signal desktop='^9'
 bspc rule -a Spotify desktop='^10'
 
-# Auto starts
-pgerp -x picom > /dev/null || picom -f -D 4 &
-setxkbmap -layout us,ir &
-setxkbmap -option 'grp:alt_shift_toggle' &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#pgerp -x conky > /dev/null || conky &
-#pgrep -x redshift > /dev/null || redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
-nm-applet &
-blueman-applet &
-variety &
-safeeyes &
-syncthing &
-kdeconnect-indicator
-optimus-manager-qt &
