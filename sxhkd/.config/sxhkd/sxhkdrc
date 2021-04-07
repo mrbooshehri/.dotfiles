@@ -9,18 +9,10 @@ super + Return
 # dmenu
 super + shift + Return 
 	dmenu_run
-super + p
-	~/scripts/dmenu/dmenu-powermenu.sh
+super + {p,o,m,s,c}
+	~/scripts/dmenu/dmenu-{powermenu,obs,dict,script,configs}.sh
 super + shift + p
 	~/scripts/dmenu/dmenu-kill-ps.sh
-super + o
-	~/scripts/dmenu/dmenu-obs.sh
-super + m
-	~/scripts/dmenu/dmenu-dict.sh
-super + s
-	~/scripts/dmenu/dmenu-script.sh
-super + c
-	~/scripts/dmenu/dmenu-configs.sh
 super + y
 	~/github/ytfzf/ytfzf -D
 super + t 
@@ -32,26 +24,31 @@ super + d
 super + e
 	rofi -modi Emoji:~/.config/rofi/rofiemoji/rofiemoji.sh -show
 
-
 # scrot
-Print 
-	~/scripts/scrot/scrot.sh
-Print + alt
-	~/scripts/scrot/scrot-active.sh
-Print + ctrl
-	~/scripts/scrot/scrot-select.sh
+Print + {_,shift,ctrl} 
+	~/scripts/scrot/scrot{,-active,-select}.sh
 
 # media keys
-F1
-	playerctl play-pause
-F2
-	playerctl previous
-F3
-	playerctl next
+
+XF86Audio{Play,Prev,Next} 
+	playerctl {play-pause,previous,next}
+
+XF86Audio{LowerVolume ,RaiseVolume}
+	pactl set-sink-volume 0 {-5%,+5%}
+
+XF86AudioMute 
+	pactl set-sink-mute 0 toggle
 	
+F{1,2,3} 
+	playerctl {play-pause,previous,next}
+
+# brightness
+XF86MonBrightness{Up,Down}
+	light {-A,-U} 10
+
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd; notify-send -t 2000 -u normal "sxhkd restared"
 
 #
 # bspwm hotkeys
@@ -87,8 +84,14 @@ super + shift + g
 #
 
 # set the window state
-super + shift + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+#super + shift + {t,shift + t,s,f}
+#	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+super + shift {t,m,w}
+	bsp-layout set {tall,monocle,wide}
+
+super + ctrl + {comma,period}
+	bsp-layout cycle {,--layouts rtall,rwide,gird,rgird,even}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
