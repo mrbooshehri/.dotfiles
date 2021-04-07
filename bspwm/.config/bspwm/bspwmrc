@@ -1,8 +1,10 @@
 #! /bin/sh
 
-# Auto starts
-
 pgrep -x sxhkd > /dev/null || sxhkd > /dev/null 2>&1 &
+bspc monitor -d           
+bsp-layout set tall
+
+# Auto starts
 $HOME/.config/polybar/launch.sh --shades
 pgerp -x picom > /dev/null || picom -f -D 4 > /dev/null 2>&1 &
 setxkbmap -layout us,ir &
@@ -17,7 +19,6 @@ safeeyes &
 syncthing &
 kdeconnect-indicator
 optimus-manager-qt &
-bspc monitor -d           
 
 
 # Truncate a couple of common commands that are used herein.
