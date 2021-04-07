@@ -2,13 +2,13 @@
 
 # Auto starts
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd > /dev/null 2>&1 &
 $HOME/.config/polybar/launch.sh --shades
-pgerp -x picom > /dev/null || picom -f -D 4 &
+pgerp -x picom > /dev/null || picom -f -D 4 > /dev/null 2>&1 &
 setxkbmap -layout us,ir &
 setxkbmap -option 'grp:alt_shift_toggle' &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-pgerp -x conky > /dev/null || conky &
+pgerp -x conky > /dev/null || conky > /dev/null 2>&1 &
 pgrep -x redshift > /dev/null || redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
 nm-applet &
 blueman-applet &
