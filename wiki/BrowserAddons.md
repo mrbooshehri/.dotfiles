@@ -10,3 +10,4 @@ Most of them are available for both chromium-based and firefox-based browsers
 7. Violentmonkey --> [Scripts repo](https://greasyfork.org)
 8. Buster
 9. Universal Bypass 
+10. OneTab
