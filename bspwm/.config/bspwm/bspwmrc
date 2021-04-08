@@ -1,8 +1,8 @@
 #! /bin/sh
+bspc rule -r "*"
 
 pgrep -x sxhkd > /dev/null || sxhkd > /dev/null 2>&1 &
 bspc monitor -d           
-bsp-layout set tall
 
 # Auto starts
 $HOME/.config/polybar/launch.sh --shades
