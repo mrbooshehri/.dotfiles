@@ -11,8 +11,8 @@ wmname LG3D
 picom -f -D 6 &
 
 # set layout
-setxkbmap -layout us,ir 
-setxkbmap -option 'grp:alt_shift_toggle' 
+#setxkbmap -layout us,ir 
+#setxkbmap -option 'grp:alt_shift_toggle' 
 
 # pol-kit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
