@@ -1,4 +1,4 @@
-# DWM Flexi Patchees
+# dwm Flexi Patchees
 1. DWMBLOCKS
 2. LAYOUTMENU
 3. STATUSBUTTON
@@ -49,11 +49,7 @@
 50. WINDOWROLERULE
 51. XKB
 52. XRDB
-53. BSTACK
-54. CENTEREDMASTER
-55. CENTEREDFLOATINGMASTER
 56. FLEXTILE_DELUXE
-57. GRIDMODE
 
 # Key Bindings
 | #   | Key combination          | Action                 | Description                        |

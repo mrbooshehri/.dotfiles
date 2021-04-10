@@ -5,4 +5,5 @@
 
 
 # User Manuals
-1. [DWM](DWM)
+1. [dwm](DWM)
+2. [st](st)
