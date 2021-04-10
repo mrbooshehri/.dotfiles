@@ -242,7 +242,8 @@ ShowTimePercent = yes
 #
 # Example:    Theme = laras_theme
 #
-Theme = tty
+#Theme = tty
+Theme = wal
 
 # The theme used when running on an xterm.
 #
