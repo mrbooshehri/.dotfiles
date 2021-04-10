@@ -819,3 +819,30 @@ background_opacity: 0.95
   # Print all received window events.
   #print_events: false
 
+# BEGIN ACE
+colors:
+  primary:
+    background: '#091112'
+    foreground: '#b3b9ad'
+  cursor:
+    text:       '#091112'
+    cursor:     '#b3b9ad'
+  normal:
+    black:      '#091112'
+    red:        '#45563B'
+    green:      '#3B4F43'
+    yellow:     '#3F6141'
+    blue:       '#475848'
+    magenta:    '#546750'
+    cyan:       '#69755F'
+    white:      '#b3b9ad'
+  bright:
+    black:      '#7d8179'
+    red:        '#45563B'
+    green:      '#3B4F43'
+    yellow:     '#3F6141'
+    blue:       '#475848'
+    magenta:    '#546750'
+    cyan:       '#69755F'
+    white:      '#b3b9ad'
+# END ACE

@@ -43,6 +43,8 @@ Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'shime/vim-livedown'		" markdown preview
 Plugin 'neoclide/coc.nvim', {'branch': 'release'} " COC 
+Plugin 'dylanaraps/wal.vim'		" paywal theme
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,7 +55,7 @@ let g:gruvbox_guisp_fallback='bg'
 
 "---------------------------------------- my init
 syntax enable                           " Enables syntax highlighing
-colorscheme gruvbox
+colorscheme wal
 "highlight Normal ctermbg=Black
 "highlight NonText ctermbg=Black
 highlight Search ctermbg=blue
