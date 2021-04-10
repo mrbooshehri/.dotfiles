@@ -3,12 +3,15 @@
 # status bar
 dwmblocks &
 
+# Keyboard listner
+pgrep -x sxhkd > /dev/null || sxhkd -c ~/.config/sxhkd/sxhkdrc_dwm > /dev/null 2>&1 &
+
 # android studio hack
 wmname LG3D
 
 # transparancy
 #compton -f -D 10 &
-picom -f -D 6 &
+pgerp -x picom > /dev/null || picom -f -D 6 &
 
 # set layout
 #setxkbmap -layout us,ir 
@@ -17,10 +20,13 @@ picom -f -D 6 &
 # pol-kit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # conky
-conky > /dev/null 2>&1 &
+pgerp -x conky > /dev/null || conky > /dev/null 2>&1 &
 
 # redshift
-redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
+pgerp -x redshift > /dev/null || hredshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
+
+# colorscheme
+bash ~/scripts/general/color-scheme.sh
 
 # application
 #korganizer &
