@@ -19,9 +19,9 @@ super + {p,o,m,s,c}
 super + shift + p
 	~/scripts/dmenu/dmenu-kill-ps.sh
 super + y
-	~/github/ytfzf/ytfzf -D
+	~/.src/ytfzf/ytfzf -D
 super + t 
-	~/github/pirokit/pirokit
+	~/.src/pirokit/pirokit
 
 # Rofi
 super + d
