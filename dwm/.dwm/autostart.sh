@@ -32,7 +32,7 @@ bash ~/scripts/general/color-scheme.sh
 #korganizer &
 nm-applet &
 blueman-applet &
-variety &
+#variety &
 safeeyes &
 syncthing &
 #megasync &

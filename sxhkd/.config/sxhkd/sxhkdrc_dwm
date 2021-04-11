@@ -6,6 +6,11 @@ super + Escape
 super + Return
 	alacritty	
 
+# colorscheme
+
+super + shift + c
+	~/scripts/general/color-scheme.sh
+
 # dmenu
 super + shift + Return 
 	dmenu_run
