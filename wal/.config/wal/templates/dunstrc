@@ -14,7 +14,7 @@
     separator_color = auto
     sort = yes
     idle_threshold = 1
-    font = Open Sans 10
+    font = Font Awesome 6 Pro Regular 10
     line_height = 0
     format = "<b>%s</b>\n%b"
     alignment = left
@@ -27,7 +27,7 @@
     show_indicators = no
     icon_position = left
     max_icon_size = 60
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+#    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
     sticky_history = yes
     history_length = 20
     dmenu = /usr/bin/dmenu -p dunst:
@@ -53,18 +53,21 @@
     foreground = "{foreground}"
     frame_color = "{foreground}"
     timeout = 3
-    icon = ~/.config/dunst/warning.png
+    icon =
+#    icon = ~/.config/dunst/warning.png
 
 [urgency_normal]
     background = "{background}"
     foreground = "{foreground}"
     frame_color = "{foreground}"
     timeout = 3
-    icon = ~/.config/dunst/info.png
+    icon =
+#    icon = ~/.config/dunst/info.png
 
 [urgency_critical]
     background = "{background}"
     foreground = "{foreground}"
     frame_color = "{foreground}"
     timeout = 3
-    icon = ~/.config/dunst/error.png
+    icon =
+#    icon = ~/.config/dunst/error.png
