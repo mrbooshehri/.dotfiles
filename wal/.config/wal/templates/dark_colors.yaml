@@ -1,0 +1,44 @@
+# Main Colors
+unrecognized_file: '{color5}'
+recognized_file:   lime
+dir:               dodgerblue
+
+# Link
+dead_link: '{color3}'
+link:      '{color7}'
+
+# special files
+socket:   '{color4}' 
+blockdev: '{color4}' 
+chardev:  '{color4}' 
+
+# Access Modes
+write:     darkkhaki
+read:      limegreen
+exec:      '{color3}'
+no_access: indianred
+
+# Age
+day_old:     mediumspringgreen
+hour_old:    lime
+no_modifier: seagreen
+
+# File Size
+file_large:  orange
+file_medium: '{color5}'
+file_small:  peachpuff
+
+# Random
+report: '{color8}'
+user:   moccasin
+tree:   '{color7}'
+empty:  '{color5}'
+error:  '{color3}'
+normal: darkkhaki
+
+# Git
+addition:     chartreuse
+modification: darkkhaki
+deletion:     darkred
+untracked:    darkorange
+unchanged:    forestgreen

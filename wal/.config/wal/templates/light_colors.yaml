@@ -1,0 +1,44 @@
+# Main Colors
+unrecognized_file: darkred
+recognized_file:   darkgreen
+dir:               navyblue
+
+# Link
+dead_link: '{color3}'
+link:      '{color7}'
+
+# special files
+socket:    darkgray
+blockdev:  darkgray
+chardev:   darkgray
+
+# Access Modes
+write:    '{color3}'
+read:      sienna
+exec:      navyblue
+no_access: '{color0}'
+
+# Age
+day_old:     darkred
+hour_old:    saddlebrown
+no_modifier: '{color0}'
+
+# File Size
+file_large:  darkred
+file_medium: saddlebrown
+file_small:  '{color0}'
+
+# Random
+report: '{color0}'
+user:   darkblue
+tree:   '{color7}'
+empty:  '{color5}'
+error:  '{color3}'
+normal: '{color0}'
+
+# Git
+addition:     chartreuse
+modification: darkkhaki
+deletion:     darkred
+untracked:    darkorange
+unchanged:    darkgreen
