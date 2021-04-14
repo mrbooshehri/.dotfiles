@@ -14,14 +14,10 @@ super + shift + c
 # dmenu
 super + shift + Return 
 	dmenu_run
-super + {p,o,m,s,c}
-	~/scripts/dmenu/dmenu-{powermenu,obs,dict,script,configs}.sh
-super + shift + p
-	~/scripts/dmenu/dmenu-kill-ps.sh
-super + y
-	~/.src/ytfzf/ytfzf -D
+super + {p,s,c}
+	~/scripts/dmenu/dmenu-{powermenu,script,configs}.sh
 super + t 
-	~/.src/pirokit/pirokit
+	~/scripts/dmenu/dmenu-toolbox.sh
 
 # Rofi
 super + d
