@@ -1,5 +1,5 @@
 ;; Set default font size
-(defvar alpha2phi/default-font-size 160)
+(defvar alpha2phi/default-font-size 100)
 (set-face-attribute 'default nil :height alpha2phi/default-font-size)
 
 ;; Custom file
@@ -7,8 +7,9 @@
 
 ;; Package repositories
 (require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+
 (package-initialize)
 
 (when (not package-archive-contents)
