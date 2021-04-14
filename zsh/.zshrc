@@ -100,6 +100,10 @@ hdd() {
  cd "$(find /mnt/1TB -type d | fzf)" 
 }
 
+cheat(){
+  curl cheat.sh/$1
+}
+
 # Config aliases
 alias zshconf="vim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
@@ -118,10 +122,7 @@ alias sxhconf="vim ~/.config/sxhkd/sxhkdrc"
 alias ..="cd .."
 alias rm="rm -i"
 alias mv="mv -i"
-alias ls="colorls --group-directories-first"
-alias ll="colorls -lA --sd --group-directories-first"
-alias tml="tmux ls"
-alias tmk="tmux kill-session -t" 
+alias ls="exa --icons --group-directories-first"
 alias tomp3="~/scripts/tomp3.sh"
 
 alias rndman="~/scripts/bash/rndman.sh"
@@ -134,7 +135,7 @@ alias findman="~/scripts/bash/findman.sh"
 #
 # curl
 #alias wttr="curl wttr.in"
-#
+
 # Env variables
 #export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR="vim"
