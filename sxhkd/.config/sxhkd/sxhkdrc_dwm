@@ -46,37 +46,24 @@ XF86MonBrightness{Up,Down}
 
 # dwm hotkeys
 
-## tags 
-super + {_,ctrl +}{_,shift +} {1-9}
-	dwmc {_,toggle}{viewex,tagex} {0-8}
-super + 0
-	dwmc viewall
-
 ## client actions
-super + {h,l}
-	dwmc setmfact {-,+}0.05
 super + shift + {k,j}
 	dwmc movestack {-,+}1
 super + {k,j}
 	dwmc focusstack {-,+}1
 super + ctrl + shift + {q,r}
 	dwmc {quit,self_restart}
-super + shift + q	
-	dwmc killclient
 
 ## toggles
-super + b 
-	dwmc togglebar
-super + space 
-	dwmc togglefloating
-
+super + n
+	dwmc togglealttag
 # layouts
-super + shift + {t,m,d,b}
-	dwmc setlayoutex {0,2,5,6}
+super + shift + {d,b}
+	dwmc setlayoutex {5,6}
+super + shift + {d,b}
+	dwmc setlayoutex {5,6}
 super + shift + {period,comma}
 	dwmc cyclelayout {+,-}1
-super + shift + {i,d} 
-	dwmc incnmaster {+,-}1
 
 ## resources
 super + shift + F5
