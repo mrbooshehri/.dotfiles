@@ -60,8 +60,6 @@ super + n
 # layouts
 super + shift + {d,b}
 	dwmc setlayoutex {5,6}
-super + shift + {d,b}
-	dwmc setlayoutex {5,6}
 super + shift + {period,comma}
 	dwmc cyclelayout {+,-}1
 
