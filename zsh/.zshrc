@@ -101,7 +101,8 @@ hdd() {
 }
 
 cheat(){
-  curl cheat.sh/$1
+  curl -4s cheat.sh/$1\?T > /tmp/cheat.md
+  glow -p /tmp/cheat.md
 }
 
 # Config aliases
