@@ -14,44 +14,28 @@ call vundle#begin()
 
 " Pugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'turbio/bracey.vim'		" plugin for live html, css, and javascript editing in vim
 Plugin 'scrooloose/syntastic'		" Syntastic is a syntax checking plugin for Vim
 Plugin 'preservim/nerdtree'		" The NERDTree is a file system explorer for the Vim editor
-Plugin 'kien/rainbow_parentheses.vim'	" Better Rainbow Parentheses
+Plugin 'jiangmiao/auto-pairs'          " Insert or delete brackets, parens, quotes in pair.
 Plugin 'airblade/vim-gitgutter'		" A Vim plugin which shows a git diff in the sign column
-Plugin 'jiangmiao/auto-pairs'		" Insert or delete brackets, parens, quotes in pair.
 Plugin 'junegunn/fzf'			" fzf is a general-purpose command-line fuzzy finder.
-Plugin 'tpope/vim-surround'		" Surround.vim is all about : parentheses, brackets, quotes, XML tags, and more
-Plugin 'mg979/vim-visual-multi'		" multi cursor
-Plugin 'morhetz/gruvbox'		" gruvbox is heavily inspired by badwolf, jellybeans and solarized.
 Plugin 'prettier/vim-prettier'		" A vim plugin wrapper for prettier, pre-configured with custom default prettier settings.
-Plugin 'jacoborus/tender.vim'		" A 24bit colorscheme for Vim, Airline and Lightline 
 Plugin 'myusuf3/numbers.vim'		" numbers.vim is a vim plugin for better line numbers
 Plugin 'habamax/vim-gruvbit'		" gruvbit colorscheme
-Plugin 'rakr/vim-one'			" one colorscheme
-Plugin 'connorholyday/vim-snazzy'	" snazzy colorscheme
-Plugin 'RohanPoojary/pleasant.vim'	" pleasant colorsheme
 Plugin 'ryanoasis/vim-devicons'		" vim icon
 Plugin 'vim-airline/vim-airline'	" airline
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/unite.vim'		" search
-Plugin 'lilydjwg/colorizer'
 Plugin 'yggdroot/indentline'		" indent indicator
-Plugin 'xolox/vim-notes'		" note taking
-Plugin 'xolox/vim-misc'			" note taking
-Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'shime/vim-livedown'		" markdown preview
-Plugin 'neoclide/coc.nvim', {'branch': 'release'} " COC 
 Plugin 'dylanaraps/wal.vim'		" paywal theme
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"---------------------------------------- gruvbox config
-let g:gruvbox_contrast_dark = 'hard'	" soft hard medium
-let g:gruvbox_guisp_fallback='bg'
 
 "---------------------------------------- my init
 syntax enable                           " Enables syntax highlighing
@@ -104,7 +88,6 @@ let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline_theme = 'gruvbox'
 
 "---------------------------------------- lightline config
 
@@ -116,13 +99,3 @@ let g:airline_right_sep = ''
 "---------------------------------------- custom keybindings
 vnoremap <C-c> "+y
 map <C-p> "+p
-
-"---------------------------------------- LaTeX preview
-autocmd Filetype tex setl updatetime=1
-let g:livepreview_previewer = 'zathura -'
-
-"---------------------------------------- automations
-au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
-
-"---------------------------------------- vimwiki

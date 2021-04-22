@@ -100,9 +100,17 @@ hdd() {
  cd "$(find /mnt/1TB -type d | fzf)" 
 }
 
-cheat(){
-  curl -4s cheat.sh/$1\?T > /tmp/cheat.md
+cheat() {
+  curl -s4 cheat.sh/$1\?T > /tmp/cheat.md
   glow -p /tmp/cheat.md
+}
+
+upload() {
+  curl -s4 --upload-file $1 https://transfer.sh/$1
+}
+
+download() {
+  curl -s4 $1 -o $2
 }
 
 # Config aliases
