@@ -42,8 +42,8 @@ syntax enable                           " Enables syntax highlighing
 colorscheme wal
 "highlight Normal ctermbg=Black
 "highlight NonText ctermbg=Black
-highlight Search ctermbg=blue
-highlight SpellBad ctermbg=red
+"highlight Search ctermbg=blue
+"highlight SpellBad ctermbg=red
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
