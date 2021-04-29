@@ -1,6 +1,7 @@
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
+unsetopt CASE_GLOB
 eval "$(starship init zsh)"
 
 # History in cache directory:
@@ -82,6 +83,7 @@ export EDITOR="vim"
 export PAGER="bat"
 
 # nnn
+alias nnn="nnn -P p"
 export NNN_FIFO='/tmp/nnn.fifo'
-export NNN_PLUG='p:preview-tui-ext;i:imgview;v:vidthumb;d:dragd'
+export NNN_PLUG='b:bookmarks;c:rsynccp;d:dragdrop;f:finder;m:mptmount;p:preview-tui-ext;s:kedeconnect;w:wall'
 
