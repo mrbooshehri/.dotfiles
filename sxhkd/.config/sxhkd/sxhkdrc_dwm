@@ -33,7 +33,7 @@ Print + {_,shift,ctrl}
 XF86Audio{Play,Prev,Next} 
 	playerctl {play-pause,previous,next}
 XF86Audio{LowerVolume ,RaiseVolume}
-	pactl set-sink-volume 0 {-5%,+5%};pkill -RTMIN+10 dwmblocks
+	~/scripts/general/volumectl.sh -{d,u}; pkill -RTMIN+10 dwmblocks
 XF86AudioMute 
 	pactl set-sink-mute 0 toggle;pkill -RTMIN+10 dwmblocks
 F{1,2,3} 
