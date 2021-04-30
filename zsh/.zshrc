@@ -13,6 +13,11 @@ HISTFILE=~/.cache/zsh/history
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
+# Make it case insensetive
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# Speed up compinit
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/cache"
 compinit
 
 # vi mode
@@ -33,7 +38,7 @@ bindkey '^e' edit-command-line
 # Load plugins
 source ~/.src/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 source ~/.src/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
-
+source ~/.src/zsh/jq-zsh-plugin/jq.plugin.zsh 2>/dev/null
 # Functions
 fcd() {
  cd "$(find -type d | fzf)" 
