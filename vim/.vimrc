@@ -5,7 +5,7 @@
 "|_|  |_|_|  |_.__/ \___/ \___/|___/_| |_|\___|_| |_|_|  |_|
 "
 "
-"-------------------------------------------- Vundle init set nocompatible              " be iMproved, required
+"-------------------------------------------- Vundle init set nocompatible
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -99,3 +99,8 @@ let g:airline_right_sep = ''
 "---------------------------------------- custom keybindings
 vnoremap <C-c> "+y
 map <C-p> "+p
+
+
+"---------------------------------------- aliases
+command Lp LivedownPreview
+command Lk LivedownKill
