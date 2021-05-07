@@ -84,8 +84,9 @@ alias findman="~/scripts/bash/findman.sh"
 
 # Env variables
 export PATH="${PATH}:${HOME}/.local/bin/"
+export PATH="${PATH}:${HOME}/.cargo/bin"
 export EDITOR="vim"
-export PAGER="bat"
+#export PAGER="bat"
 
 # nnn
 alias nnn="nnn -P p"
