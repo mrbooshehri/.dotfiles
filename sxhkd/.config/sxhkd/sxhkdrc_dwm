@@ -8,8 +8,8 @@ super + Return
 
 # colorscheme
 
-super + shift + c
-	~/scripts/general/color-scheme.sh
+super + shift + {c,p}
+	~/scripts/{general/color-scheme.sh,dmenu/dmenu-kill-ps.sh}
 
 # dmenu
 super + shift + Return 
