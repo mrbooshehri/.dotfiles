@@ -23,7 +23,7 @@ pgerp -x picom > /dev/null || picom -f -D 6 &
 pgerp -x conky > /dev/null || conky > /dev/null 2>&1 &
 
 # redshift
-pgerp -x redshift > /dev/null || hredshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
+pgerp -x redshift > /dev/null || redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
 
 # colorscheme
 bash ~/scripts/general/color-scheme.sh
