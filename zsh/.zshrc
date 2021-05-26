@@ -67,6 +67,7 @@ alias srczsh="source ~/.zshrc"
 alias bshconf="vim ~/.bashrc"
 alias srcbsh="source ~/.bashrc"
 alias vimconf="vim ~/.vimrc"
+alias autoremove="sudo pacman -Rcns $(pacman -Qdtq)"
 
 alias ..="cd .."
 alias rm="rm -i"
