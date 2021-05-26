@@ -33,15 +33,19 @@ Print + {_,shift,ctrl}
 XF86Audio{Play,Prev,Next} 
 	playerctl {play-pause,previous,next}
 XF86Audio{LowerVolume ,RaiseVolume}
-	~/scripts/general/volumectl.sh -{d,u}; pkill -RTMIN+10 dwmblocks
+	~/scripts/general/volumectl.sh -{d,u}; pkill -RTMIN+10 dwmblocks; ~/scripts/dunst/dunst-volume.sh
 XF86AudioMute 
-	pactl set-sink-mute 0 toggle;pkill -RTMIN+10 dwmblocks
+	pactl set-sink-mute 0 toggle;pkill -RTMIN+10 dwmblocks; ~/scripts/dunst/dunst-volume.sh
 F{1,2,3} 
 	playerctl {play-pause,previous,next}
 
 # brightness
 XF86MonBrightness{Up,Down}
-	light {-A,-U} 10;pkill -RTMIN+11 dwmblocks
+	light {-A,-U} 10;pkill -RTMIN+11 dwmblocks; ~/scripts/dunst/dunst-backlight.sh
+
+# keymouse
+alt + {h,j,k,l,v,b,n}
+	~/Projects/python/keymouse/main.py {left,down,up,right,dclick,rclick,click}
 
 
 # dwm hotkeys
