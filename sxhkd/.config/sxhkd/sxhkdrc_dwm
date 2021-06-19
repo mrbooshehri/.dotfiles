@@ -27,7 +27,7 @@ super + e
 
 # scrot
 Print + {_,shift,ctrl} 
-	~/scripts/scrot/scrot{,-active,-select}.sh
+	~/scripts/scrot/scrot.sh { ,-a,-s}
 
 # media keys
 XF86Audio{Play,Prev,Next} 
