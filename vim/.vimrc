@@ -15,23 +15,21 @@ call vundle#begin()
 " Pugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'		" Syntastic is a syntax checking plugin for Vim
-Plugin 'preservim/nerdtree'		" The NERDTree is a file system explorer for the Vim editor
 Plugin 'jiangmiao/auto-pairs'           " Insert or delete brackets, parens, quotes in pair.
 Plugin 'airblade/vim-gitgutter'		" A Vim plugin which shows a git diff in the sign column
-Plugin 'junegunn/fzf'			" fzf is a general-purpose command-line fuzzy finder.
 Plugin 'prettier/vim-prettier'		" A vim plugin wrapper for prettier, pre-configured with custom default prettier settings.
 Plugin 'myusuf3/numbers.vim'		" numbers.vim is a vim plugin for better line numbers
-Plugin 'habamax/vim-gruvbit'		" gruvbit colorscheme
 Plugin 'ryanoasis/vim-devicons'		" vim icon
 Plugin 'vim-airline/vim-airline'	" airline
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/unite.vim'		" search
 Plugin 'yggdroot/indentline'		" indent indicator
-Plugin 'vimwiki/vimwiki'
 Plugin 'chrisbra/colorizer'		" hex colerizer
 Plugin 'shime/vim-livedown'		" markdown preview
 Plugin 'dylanaraps/wal.vim'		" paywal theme
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'hallison/vim-markdown'
+Plugin 'vimwiki/vimwiki'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/mhmd/notes'
+let g:netrw_dirhist_3='/home/mhmd/notes/series - movies vocab'
+let g:netrw_dirhist_2='/home/mhmd/notes/presentation'
+let g:netrw_dirhist_1='/home/mhmd/notes/lpic1book-master'
