@@ -86,6 +86,7 @@ alias findman="~/scripts/bash/findman.sh"
 # Env variables
 export PATH="${PATH}:${HOME}/.local/bin/"
 export PATH="${PATH}:${HOME}/.cargo/bin"
+export PATH="${PATH}:${HOME}/.emacs.d/bin"
 export EDITOR="vim"
 #export PAGER="bat"
 
@@ -93,4 +94,5 @@ export EDITOR="vim"
 alias nnn="nnn -P p"
 export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_PLUG='b:bookmarks;c:rsynccp;d:dragdrop;f:finder;m:mptmount;p:preview-tui-ext;s:kedeconnect;w:wall'
+export NNN_BMS="1:/mnt/1TB;l:/mnt/1TB/Documents/Learning;D:/mnt/1TB/Downloads;d:/mnt/1TB/Documents"
 
