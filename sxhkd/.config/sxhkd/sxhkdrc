@@ -6,23 +6,17 @@
 super + Return
 	alacritty	
 
-# dmenu
-super + shift + Return 
-	dmenu_run
-super + {p,o,m,s,c}
-	~/scripts/dmenu/dmenu-{powermenu,obs,dict,script,configs}.sh
+super + t
+	~/scripts/dmenu/dmenu-toolbox.sh
 super + shift + p
 	~/scripts/dmenu/dmenu-kill-ps.sh
-super + y
-	~/github/ytfzf/ytfzf -D
-super + t 
-	~/github/pirokit/pirokit
+super + c 
+	~/scripts/bspwm/bspwm_setscheme.sh
 
-# Rofi
 super + d
-	rofi -show drun -show-icons
+	dmenu_run
 super + e
-	rofi -modi Emoji:~/.config/rofi/rofiemoji/rofiemoji.sh -show
+	~/scripts/dmenu/dmenu-emoji.sh
 
 # scrot
 Print + {_,shift,ctrl} 
@@ -32,19 +26,16 @@ Print + {_,shift,ctrl}
 
 XF86Audio{Play,Prev,Next} 
 	playerctl {play-pause,previous,next}
-
 XF86Audio{LowerVolume ,RaiseVolume}
-	pactl set-sink-volume 0 {-5%,+5%}
-
+	~/scripts/general/volumectl.sh -{d,u}; pkill -RTMIN+10 dwmblocks; ~/scripts/dunst/dunst-volume.sh
 XF86AudioMute 
-	pactl set-sink-mute 0 toggle
-	
+	pactl set-sink-mute 0 toggle;pkill -RTMIN+10 dwmblocks; ~/scripts/dunst/dunst-volume.sh
 F{1,2,3} 
 	playerctl {play-pause,previous,next}
 
 # brightness
 XF86MonBrightness{Up,Down}
-	light {-A,-U} 10
+	light {-A,-U} 10;pkill -RTMIN+11 dwmblocks; ~/scripts/dunst/dunst-backlight.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -58,7 +49,7 @@ super + Escape
 #super + alt + {q,r}
 #	bspc {quit,wm -r}
 super + shift + r
-	bspc wm -r
+	bspc wm -r && notify-send "Reload" "Window manager sucsessfully reloaded" 
 
 super + ctrl + shift + q
 	bspc quit
