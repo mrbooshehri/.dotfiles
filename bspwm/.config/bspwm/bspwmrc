@@ -29,6 +29,9 @@ bspc rule -a Hamster state=floating
 bspc rule -a Orage state=floating
 bspc rule -a Blueman-manager state=floating
 bspc rule -a Screenkey manage=off
+bspc rule -a Zathura state=tiled
+bspc rule -a SpeedCrunch state=floating
+
 
 bspc rule -a firefox desktop='2'
 bspc rule -a Brave-browser desktop='2'
@@ -37,9 +40,9 @@ bspc rule -a qutebrowser desktop='2'
 bspc rule -a Code desktop='3'
 bspc rule -a jetbrains-studio desktop='3'
 bspc rule -a obs desktop='4'
-bspc rule -a Rambox desktop='5'
-bspc rule -a TelegramDesktop desktop='5'
-bspc rule -a Signal desktop='5'
+bspc rule -a Rambox desktop='10'
+bspc rule -a TelegramDesktop desktop='10'
+bspc rule -a Signal desktop='10'
 
 # Auto starts
 bsp-layout set tall &
