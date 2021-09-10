@@ -75,6 +75,7 @@ configuration {{
     spacing: 2px;
     scrollbar: false;
     padding: 2px 0px 0px;
+    lines: 5;
 }}
 
 #element {{
