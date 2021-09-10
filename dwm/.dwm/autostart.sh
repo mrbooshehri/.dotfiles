@@ -26,7 +26,9 @@ pgerp -x conky > /dev/null || conky > /dev/null 2>&1 &
 pgerp -x redshift > /dev/null || redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
 
 # colorscheme
-bash ~/scripts/general/color-scheme.sh
+#bash ~/scripts/general/color-scheme.sh
+
+feh --bg-fill --randomize /mnt/1TB/Pictures/Wallpaper.repo/* 
 
 # application
 #korganizer &
