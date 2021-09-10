@@ -1,0 +1,11 @@
+
+xmenu.font:Open Sans:size=12, Font Awesome 6 pro Regular:size=11
+xmenu.background: {background} 
+xmenu.foreground: {foreground}
+xmenu.selbackground:{color6} 
+xmenu.selforeground: {background}
+xmenu.border: {foreground}
+xmenu.borderWidth:2
+xmenu.separator: {foreground}
+xmenu.separatorWidth:2
+xmenu.gap:4
