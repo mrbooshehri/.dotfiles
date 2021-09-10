@@ -145,6 +145,11 @@ super + ctrl + shift + space
 #
 # move/resize
 #
+super + e : {h,j,k,l}
+    bspwm_resize.sh expand {west,south,north,east} 50
+
+super + shift + e : {h,j,k,l}
+    bspwm_resize.sh contract {west,south,north,east} 50
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
