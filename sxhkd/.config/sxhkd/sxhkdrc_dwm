@@ -14,8 +14,10 @@ super + shift + {c,p}
 # dmenu
 super + shift + Return 
 	dmenu_run
-super + {p,s,c}
-	~/scripts/dmenu/dmenu-{powermenu,script,configs}.sh
+#super + {p,s,c}
+#	~/scripts/dmenu/dmenu-{powermenu,script,configs}.sh
+super + c
+	~/scripts/dwm/dwm-setscheme.sh
 super + t 
 	~/scripts/dmenu/dmenu-toolbox.sh
 
