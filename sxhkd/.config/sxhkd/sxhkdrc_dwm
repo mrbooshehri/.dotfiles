@@ -63,7 +63,7 @@ super + n
 	dwmc togglealttag
 # layouts
 super + shift + {d,b}
-	dwmc setlayoutex {5,6}
+	dwmc setlayoutex {7,3}
 super + shift + {period,comma}
 	dwmc cyclelayout {+,-}1
 
