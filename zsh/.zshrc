@@ -41,7 +41,11 @@ source ~/.src/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 source ~/.src/zsh/jq-zsh-plugin/jq.plugin.zsh 2>/dev/null
 # Functions
 fcd() {
- cd "$(find -type d | fzf)" 
+ cd "$(find -maxdepth 2 -type d | fzf)" 
+}
+
+hdd(){
+  cd "$(find /mnt/1TB/ -maxdepth 3 -type d 2>/dev/null | fzf)"
 }
 
 open() {
