@@ -1,6 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/home/mhmd/notes'
-let g:netrw_dirhist_3='/home/mhmd/notes/series - movies vocab'
-let g:netrw_dirhist_2='/home/mhmd/notes/presentation'
-let g:netrw_dirhist_1='/home/mhmd/notes/lpic1book-master'
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/mhmd/suckless/dwm-flexipatch/patch'
+let g:netrw_dirhist_8='/home/mhmd/Lofi Fruits Music'
+let g:netrw_dirhist_7='/home/mhmd/.local/share/desktop-directories'
+let g:netrw_dirhist_6='/home/mhmd/.local/share/xfce4'
+let g:netrw_dirhist_5='/home/mhmd/scripts'
+let g:netrw_dirhist_4='/home/mhmd/scripts/dmenu'
+let g:netrw_dirhist_3='/home/mhmd/.dotfiles/wal/.config/wal/templates'
+let g:netrw_dirhist_2='/usr/share/doc'
+let g:netrw_dirhist_1='/usr/share/doc/nvidia-utils'
+let g:netrw_dirhist_0='/usr/share/doc'
