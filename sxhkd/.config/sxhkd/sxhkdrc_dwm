@@ -9,7 +9,7 @@ super + Return
 # colorscheme
 
 super + shift + {c,p}
-	~/scripts/{general/color-scheme.sh,dmenu/dmenu-kill-ps.sh}
+	~/scripts/{dmenu/dmenu-wal-change.sh,dmenu/dmenu-kill-ps.sh}
 
 # dmenu
 super + shift + Return 
@@ -68,6 +68,8 @@ super + shift + {d,b}
 	dwmc setlayoutex {7,3}
 super + shift + {period,comma}
 	dwmc cyclelayout {+,-}1
+super + f
+	dwmc fullscreen
 
 ## resources
 super + shift + F5
