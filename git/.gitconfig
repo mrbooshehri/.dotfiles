@@ -1,3 +1,16 @@
 [user]
 	name = mohammadreza booshehri
 	email = mrbooshehri@gmail.com
+[alias]
+	st = status -sb
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	cm = commit -m
+	rv = remote -v
+	d = diff
+	dv = difftool -t vimdiff -y
+	gl = config --global -l
+	se = !git rev-list --all | xargs git grep -F
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
