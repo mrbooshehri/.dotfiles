@@ -20,6 +20,8 @@ super + c
 	~/scripts/dwm/dwm-setscheme.sh
 super + t 
 	~/scripts/dmenu/dmenu-toolbox.sh
+super + s
+	~/scripts/dmenu/dmenu-firefox-helper.sh
 
 # Rofi
 super + d
