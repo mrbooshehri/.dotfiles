@@ -102,3 +102,11 @@ map <C-p> "+p
 "---------------------------------------- aliases
 command Lp LivedownPreview
 command Lk LivedownKill
+
+"---------------------------------------- coc keybindings
+" Use <Tab> and <S-Tab> to navigate the completion list
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" Use <Ctrl-F> to format documents with prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+noremap <C-F> :Prettier<CR>
