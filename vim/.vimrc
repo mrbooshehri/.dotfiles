@@ -102,6 +102,7 @@ map <C-p> "+p
 "---------------------------------------- aliases
 command Lp LivedownPreview
 command Lk LivedownKill
+nmap gm :LivedownToggle<CR>
 
 "---------------------------------------- coc keybindings
 " Use <Tab> and <S-Tab> to navigate the completion list
