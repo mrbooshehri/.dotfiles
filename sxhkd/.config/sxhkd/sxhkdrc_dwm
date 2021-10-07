@@ -35,13 +35,13 @@ Print + {_,shift,ctrl}
 
 # media keys
 XF86Audio{Play,Prev,Next} 
-	playerctl {play-pause,previous,next}
+	playerctl {play-pause,previous,next} || mocp -{G,r,f}
 XF86Audio{LowerVolume ,RaiseVolume}
 	~/scripts/general/volumectl.sh -{d,u}; pkill -RTMIN+10 dwmblocks; ~/scripts/dunst/dunst-volume.sh
 XF86AudioMute 
 	pactl set-sink-mute 0 toggle;pkill -RTMIN+10 dwmblocks; ~/scripts/dunst/dunst-volume.sh
 F{1,2,3} 
-	playerctl {play-pause,previous,next}
+	playerctl {play-pause,previous,next} || mocp -{G,r,f}
 
 # brightness
 XF86MonBrightness{Up,Down}
