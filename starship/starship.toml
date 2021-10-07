@@ -6,7 +6,7 @@ $git_commit\
 $git_state\
 $git_status\
 $character"""
-scan_timeout = 0
+scan_timeout = 50
 command_timeout = 0
 add_newline = false
 
