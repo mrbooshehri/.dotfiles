@@ -22,6 +22,8 @@ super + t
 	~/scripts/dmenu/dmenu-toolbox.sh
 super + s
 	~/scripts/dmenu/dmenu-firefox-helper.sh
+super + m
+	~/scripts/general/cambrinary.sh 
 
 # Rofi
 super + d
