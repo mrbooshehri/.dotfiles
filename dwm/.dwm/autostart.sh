@@ -34,12 +34,13 @@ feh --bg-fill --randomize /mnt/1TB/Pictures/Wallpaper.repo/*
 #korganizer &
 nm-applet &
 blueman-applet &
+pywalfox start &
 #variety &
 safeeyes &
 syncthing &
 #megasync &
 kdeconnect-indicator
-optimus-manager-qt &
+#optimus-manager-qt &
 #mocp -S 
 # hide mouse cursor
 #unclutter -idle 1 -root
