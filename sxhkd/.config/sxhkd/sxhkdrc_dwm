@@ -24,6 +24,8 @@ super + s
 	~/scripts/dmenu/dmenu-firefox-helper.sh
 super + m
 	~/scripts/general/cambrinary.sh 
+super + f
+	~/scripts/dmenu/dmenu-directory-helper.sh
 
 # Rofi
 super + d
@@ -72,8 +74,8 @@ super + shift + {d,b}
 	dwmc setlayoutex {7,3}
 super + shift + {period,comma}
 	dwmc cyclelayout {+,-}1
-super + f
-	dwmc fullscreen
+#super + f
+#	dwmc fullscreen
 
 ## resources
 super + shift + F5
