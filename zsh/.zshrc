@@ -39,6 +39,7 @@ bindkey '^e' edit-command-line
 source ~/.src/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 source ~/.src/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 source ~/.src/zsh/jq-zsh-plugin/jq.plugin.zsh 2>/dev/null
+
 # Functions
 fcd() {
  cd "$(find -maxdepth 2 -type d | fzf)" 
@@ -61,8 +62,20 @@ upload() {
   curl -s4 --upload-file $1 https://transfer.sh/$1
 }
 
+encupload() {
+  cat $1 | gpg -ac -o- | curl -X PUT --upload-file "-" https://transfer.sh/$1
+}
+
+decdownload() {
+  curl https://transfer.sh/$1/$2 | gpg -o- > ~/Downloads/$2
+}
 download() {
   curl -s4 $1 -o $2
+}
+
+# seach in cambridge dictionary
+dic(){
+  cambrinary -w $*
 }
 
 # Aliases
