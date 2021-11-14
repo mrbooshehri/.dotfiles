@@ -53,3 +53,4 @@ Nebula			http://178.32.62.167:8507/listen.pls?sid=1&t=.m3u
 Sensimedia 		http://144.217.203.184:8229/listen.pls?sid=1&t=.m3u	
 Lofi girl		https://www.youtube.com/watch?v=5qap5aO4i9A
 Epic music		https://www.youtube.com/watch?v=0GT84tum-mE
+Relax mind and body		https://www.youtube.com/watch?v=Ho91a_GwYxs
