@@ -23,6 +23,7 @@ compinit
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
+bindkey '^H' backward-delete-word
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
