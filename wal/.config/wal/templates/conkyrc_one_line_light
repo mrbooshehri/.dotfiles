@@ -33,7 +33,7 @@ conky.config = {{
 	own_window_transparent = false,
 	own_window_argb_visual = true,
 	own_window_argb_value = 200,
-	border_inner_margin = 16,
+--	border_inner_margin = 16,
 	stippled_borders = 0,
 	update_interval = 1.0,
 	uppercase = false,
@@ -74,7 +74,7 @@ conky.config = {{
 conky.text = [[
 ${{color4}}CPU: ${{color}}${{font}}$cpu% | ${{color}}${{acpitemp}}°C \
 ${{color4}}GPU: ${{color}}${{font}}${{exec nvidia-settings -tq GPUUtilization | awk -F '[,= ]' '{{ print $2 }}'}}% | ${{execi 60 nvidia-settings -query [gpu:0]/GPUCoreTemp -t}}°C \
-${{color4}}Mem: $mem | $memperc% \
+${{color4}}Mem: ${{color}}$mem | $memperc% \
 ${{color4}}Net: ${{color}}${{font}}${{wireless_link_qual_perc wlp9s0}}% | ${{downspeedf wlp9s0}} Mb/s | ${{color}} UL: ${{totalup wlp9s0}} | DL: ${{totaldown wlp9s0}} \
 ${{color4}}Disk: ${{color}}${{font}}/: ${{fs_used_perc /}}% | HDD: ${{fs_used_perc /mnt/1TB}}% \
 ]]
