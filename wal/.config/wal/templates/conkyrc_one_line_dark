@@ -19,6 +19,7 @@ conky.config = {{
 	gap_y = 0,
 	no_buffers = true,
 --	minimum_width = 160, minimum_height = 5,
+	minimum_width = 1360,
 --	maximum_width = 400,
 	net_avg_samples = 2,
 	uppercase = false,
@@ -31,8 +32,8 @@ conky.config = {{
 	own_window_type = 'override', --For tilling window mangers
 --	own_window_type = 'desktop',
 	own_window_transparent = false,
---	own_window_argb_visual = true,
---	own_window_argb_value = 200,
+	own_window_argb_visual = true,
+	own_window_argb_value = 210,
 --	border_inner_margin = 16,
 	stippled_borders = 0,
 	update_interval = 1.0,
@@ -72,7 +73,7 @@ conky.config = {{
 }}
 
 conky.text = [[
-${{color4}}CPU: ${{color}}${{font}}$cpu% | ${{color}}${{acpitemp}}°C \
+${{goto 250}}${{color4}}CPU: ${{color}}${{font}}$cpu% | ${{color}}${{acpitemp}}°C \
 ${{color4}}GPU: ${{color}}${{font}}${{exec nvidia-settings -tq GPUUtilization | awk -F '[,= ]' '{{ print $2 }}'}}% | ${{execi 60 nvidia-settings -query [gpu:0]/GPUCoreTemp -t}}°C \
 ${{color4}}Mem: ${{color}}$mem | $memperc% \
 ${{color4}}Net: ${{color}}${{font}}${{wireless_link_qual_perc wlp9s0}}% | ${{downspeedf wlp9s0}} Mb/s | ${{color}} UL: ${{totalup wlp9s0}} | DL: ${{totaldown wlp9s0}} \
