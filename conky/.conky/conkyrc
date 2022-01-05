@@ -1,5 +1,5 @@
 conky.config = {
-	alignment = 'bottom_middle',
+	alignment = 'top_right',
 	xinerama_head = 1,
 	background = true,
 	cpu_avg_samples = 2,
@@ -15,11 +15,11 @@ conky.config = {
 	draw_shades = false,
 	use_xft = true,
 	font = 'Hack Nerd Font:size=11',
-	gap_x = 0,
+	gap_x = 14,
 	gap_y = 0,
 	no_buffers = true,
---	minimum_width = 160, minimum_height = 5,
---	maximum_width = 400,
+	minimum_width = 160, minimum_height = 5,
+	maximum_width = 400,
 	net_avg_samples = 2,
 	uppercase = false,
 	double_buffer = true,
@@ -65,22 +65,32 @@ conky.config = {
 	color8='#fb4934', --pink
 	color9='#b16286', --purple
 
+-- load graphs
+        lua_load = 'conky_draw.lua',
+        lua_draw_hook_pre = 'main',
+
 }
 
 conky.text = [[
-${color3}${font Hack Nerd Font:style=Medium:size=25}${offset 70}${offset 70}${offset 70}
-${font}${color}${voffset -74}
-${offset 40}$cpu%
-${offset 40}${acpitemp}糖
 
-${offset 130}${voffset -38}$memperc%
+${color3}${voffset 8}${font Hack Nerd Font:style=Medium:size=16}CPU ${hr 2}${font}${voffset 8}${color}
+${color4}爛${color} Usage:$alignr$cpu%
+${color4}${color} Temp: ${alignr}${acpitemp}糖
 
-${voffset -70}
-${offset 230}${color}${downspeedf wlp9s0} 
-${offset 230}${font}${color}${wireless_link_qual_perc wlp9s0}%
+${color3}${voffset 8}${font Hack Nerd Font:style=Medium:size=16}Memory ${hr 2}${font}${voffset 8}${color}
+${color4}${color} $mem / $memmax $alignr$memperc% ${membar 8, 100}
 
-${voffset -70}
-${offset 300}${fs_used_perc /}% 
-${offset 300}${fs_used_perc /mnt/1TB}%
+${color3}${voffset 8}${font Hack Nerd Font:style=Medium:size=16}Network ${hr 2}${font}${voffset 8}${color}
+${color4}${color} Public IP:$alignr ${exec wget http://ipinfo.io/ip -qO -}
+${color4}${color} WiFi:$alignr ${addr wlp9s0}
+${color4}爛${color} Signal:${alignr} ${wireless_link_qual_perc wlp9s0}% ${wireless_link_bar 8,100 wlp9s0}
+${color4}${color} Up:        $alignr  ${upspeedf wlp9s0}
+${color4}${color} Down:   $alignr ${downspeedf wlp9s0}
+${color4}${color} Upload: ${alignr}${totalup wlp9s0}
+${color4}${color} Download: ${alignr}${totaldown wlp9s0}
 
+${color3}${voffset 8}${font Hack Nerd Font:style=Medium:size=16}Storage ${hr 2}${font}${voffset 8}${color}
+${color4}${color} ${fs_used /}/${fs_size /} ${alignr}${fs_used_perc /}% ${fs_bar 8,100 /}
+${color4}${color} ${fs_used /mnt/1TB}/${fs_size /mnt/1TB} ${alignr}${fs_used_perc /mnt/1TB}% ${fs_bar 8,100 /mnt/1TB}
+${voffset 70}
 ]]
