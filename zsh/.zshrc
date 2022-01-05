@@ -42,42 +42,10 @@ source ~/.src/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 source ~/.src/zsh/jq-zsh-plugin/jq.plugin.zsh 2>/dev/null
 
 # Functions
-fcd() {
- cd "$(find -maxdepth 2 -type d | fzf)" 
-}
-
-hdd(){
-  cd "$(find /mnt/1TB/ -maxdepth 3 -type d 2>/dev/null | fzf)"
-}
-
-open() {
-  xdg-open "$(find -type f | fzf)"
-}
-
-cheat() {
-  curl -s4 cheat.sh/$1\?T > /tmp/cheat.md
-  glow -p /tmp/cheat.md
-}
-
-upload() {
-  curl -s4 --upload-file $1 https://transfer.sh/$1
-}
-
-encupload() {
-  cat $1 | gpg -ac -o- | curl -X PUT --upload-file "-" https://transfer.sh/$1
-}
-
-decdownload() {
-  curl https://transfer.sh/$1/$2 | gpg -o- > ~/Downloads/$2
-}
-download() {
-  curl -s4 $1 -o $2
-}
-
-# seach in cambridge dictionary
-dic(){
-  cambrinary -w $*
-}
+source ~/scripts/bash/bashFunctions/dirFileHelper	# Directory and file helper
+source ~/scripts/bash/bashFunctions/cheat		# Cheat.sh
+source ~/scripts/bash/bashFunctions/transfersh		# transfersh
+source ~/scripts/bash/bashFunctions/cambinary		# seach in cambridge dictionary
 
 # Aliases
 alias zshconf="vim ~/.zshrc"
