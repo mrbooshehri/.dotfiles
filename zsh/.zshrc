@@ -83,4 +83,6 @@ export NNN_PLUG='b:bookmarks;c:rsynccp;d:dragdrop;f:finder;m:mptmount;p:preview-
 export NNN_BMS="1:/mnt/1TB;l:/mnt/1TB/Documents/Learning;D:/mnt/1TB/Downloads;d:/mnt/1TB/Documents"
 
 # Load tmux
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach || tmux new-session && exit
+fi
