@@ -46,6 +46,7 @@ source ~/scripts/bash/bashFunctions/dirFileHelper	# Directory and file helper
 source ~/scripts/bash/bashFunctions/cheat		# Cheat.sh
 source ~/scripts/bash/bashFunctions/transfersh		# transfersh
 source ~/scripts/bash/bashFunctions/cambinary		# seach in cambridge dictionary
+source ~/scripts/bash/bashFunctions/haste		# hastebin online clipboard
 
 # Aliases
 alias zshconf="vim ~/.zshrc"
