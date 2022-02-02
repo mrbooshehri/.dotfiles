@@ -14,26 +14,25 @@ call vundle#begin()
 
 " Pugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/syntastic'		" Syntastic is a syntax checking plugin for Vim
-Plugin 'jiangmiao/auto-pairs'           " Insert or delete brackets, parens, quotes in pair.
-Plugin 'airblade/vim-gitgutter'		" A Vim plugin which shows a git diff in the sign column
-Plugin 'prettier/vim-prettier'		" A vim plugin wrapper for prettier, pre-configured with custom default prettier settings.
-Plugin 'myusuf3/numbers.vim'		" numbers.vim is a vim plugin for better line numbers
-Plugin 'ryanoasis/vim-devicons'		" vim icon
-Plugin 'vim-airline/vim-airline'	" airline
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Shougo/unite.vim'		" search
-Plugin 'yggdroot/indentline'		" indent indicator
-Plugin 'chrisbra/colorizer'		" hex colerizer
-Plugin 'shime/vim-livedown'		" markdown preview
-Plugin 'dylanaraps/wal.vim'		" paywal theme
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'hallison/vim-markdown'
-Plugin 'vimwiki/vimwiki'
+Plugin 'chrisbra/colorizer'
+Plugin 'dylanaraps/wal.vim'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'rwxrob/vim-pandoc-syntax-simple'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" pandoc
+let g:pandoc#formatting#mode = 'h' " A'
+let g:pandoc#formatting#textwidth = 72
+"let g:pandoc#syntax#codeblocks#embeds#langs = ["markdown=pandoc", "bash", "python", "yaml", "vim"]
 
 "---------------------------------------- my init
 syntax enable                           " Enables syntax highlighing
@@ -56,8 +55,8 @@ set shiftwidth=2                        " Change the number of space characters 
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set number                              " Line numbers
-set cursorline                          " Enable highlighting of the current line
-set cursorcolumn                        " Enable highlighting of the current column 
+"set cursorline                          " Enable highlighting of the current line
+"set cursorcolumn                        " Enable highlighting of the current column 
 set background=dark                     " tell vim what the background color looks like
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
@@ -100,9 +99,10 @@ map <C-p> "+p
 
 
 "---------------------------------------- aliases
-nmap gm :LivedownToggle<CR>
+"nmap gm :LivedownToggle<CR>
 nmap ch :ColorHighlight<CR>
-
+" markdonw preview
+nnoremap <silent>  gm :execute 'silent !pandoc % -t pdf \| zathura - &' \| redraw<CR>
 
 "---------------------------------------- coc keybindings
 " Use <Tab> and <S-Tab> to navigate the completion list
@@ -111,3 +111,4 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " Use <Ctrl-F> to format documents with prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 noremap <C-F> :Prettier<CR>
+
